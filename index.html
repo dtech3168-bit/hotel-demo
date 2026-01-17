@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Belvedere Travelodge | Comfort & Convenience</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="brand">Belvedere Travelodge</div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-tagline">Welcome To</div>
+      <h1>The Belvedere Travelodge</h1>
+      <p>A refined stay experience with comfort, convenience, and direct booking benefits.</p>
+      <div class="hero-actions">
+        <a href="#openBooking" class="btn primary">Book Direct</a>
+        <a href="#rooms" class="btn secondary">View Rooms</a>
+      </div>
+    </div>
+  </section> 
+  <!-- About -->
+  <section class="about-us">
+    <div class="about-container">
+      <div class="about-text">
+        <h2 class="animate-text">About The Belvedere</h2>
+        <p class="animate-text">
+          At The Belvedere Travelodge, we redefine comfort and elegance. Nestled in a serene location,
+          our lodge combines modern luxury with a warm, personalized touch, ensuring every stay is
+          memorable and effortlessly relaxing.
+        </p>
+        <p class="animate-text">
+          From our exquisitely designed rooms to curated experiences, we focus on creating a refined
+          ambiance that caters to both leisure and business travelers.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="about.jpg" alt="About The Belvedere Travelodge" class="animate-image">
+      </div>
+    </div>
+  </section> 
+  
+<!-- ROOMS SECTION -->
+<section class="rooms" id="rooms">
+  <div class="container">
+    <h2 class="section-title">Our Rooms</h2>
+    <p class="section-subtitle">
+      Comfortable, stylish, and fully equipped for your stay.
+    </p>
+
+    <div class="rooms-grid">
+      <!-- Room Card -->
+      <div class="room-card">
+        <img src="room1.jpg" alt="Deluxe Room" class="room-img" />
+        <div class="room-info">
+          <h3>Deluxe Room</h3>
+          <p>Air conditioning, Wi-Fi, Refrigerator, King-size bed</p>
+          <span class="price">₦22,000 / night</span>
+        </div>
+      </div>
+
+      <!-- Room Card -->
+      <div class="room-card">
+        <img src="room2.jpg" alt="Executive Suite" class="room-img" />
+        <div class="room-info">
+          <h3>Executive Suite</h3>
+          <p>Air conditioning, Wi-Fi, Kitchenette, Sea view</p>
+          <span class="price">₦35,000 / night</span>
+        </div>
+      </div>
+
+      <!-- Room Card -->
+      <div class="room-card">
+        <img src="room3.jpg" alt="Standard Room" class="room-img" />
+        <div class="room-info">
+          <h3>Standard Room</h3>
+          <p>Air conditioning, Wi-Fi, Queen-size bed</p>
+          <span class="price">₦18,000 / night</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FEATURES / GALLERY SECTION -->
+<section class="features-gallery" id="gallery">
+  <div class="container">
+ <h2 class="section-title">Our Space</h2>
+    <div class="gallery-grid">
+      <!-- Card 1: Gym -->
+      <div class="gallery-card">
+        <img src="gym.jpg" alt="Fitness Center">
+        <div class="overlay">
+          <p>Fitness Center</p>
+        </div>
+      </div>
+
+      <!-- Card 2: Pool -->
+      <div class="gallery-card">
+        <img src="pool.jpg" alt="Outdoor Pool">
+        <div class="overlay">
+          <p>Outdoor Pool & Lounge</p>
+        </div>
+      </div>
+
+      <!-- Card 3: Restaurant -->
+      <div class="gallery-card">
+        <img src="restaurant.jpg" alt="Restaurant">
+        <div class="overlay">
+          <p>On-site Restaurant</p>
+        </div>
+      </div>
+
+      <!-- Card 4: Deluxe Room -->
+      <div class="gallery-card">
+        <img src="deluxe.jpg" alt="Deluxe Room">
+        <div class="overlay">
+          <p>Deluxe Room</p>
+        </div>
+      </div>
+
+      <!-- Card 5: Executive Suite -->
+      <div class="gallery-card">
+        <img src="executive.jpg" alt="Executive Suite">
+        <div class="overlay">
+          <p>Executive Suite</p>
+        </div>
+      </div>
+
+      <!-- Card 6: Standard Room -->
+      <div class="gallery-card">
+        <img src="standard.jpg" alt="Standard Room">
+        <div class="overlay">
+          <p>Standard Room</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING CTA BUTTON -->
+<section class="CTA">
+<div class="booking-cta">
+  <button class="submit" id="openBooking">Book Your Stay</button>
+</div>
+
+<!-- BOOKING MODAL -->
+<div class="booking-modal" id="bookingModal">
+  <div class="modal-content">
+    <span class="close" id="closeBooking">&times;</span>
+    <h2>Reserve Your Stay</h2>
+    <p>Fill out this form to book your room.</p>
+
+    <form class="booking-form">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <select required>
+        <option value="">Select Room Type</option>
+        <option value="deluxe">Deluxe Room</option>
+        <option value="executive">Executive Suite</option>
+        <option value="standard">Standard Room</option>
+      </select>
+      <input type="date" placeholder="Check-in Date" required />
+      <input type="date" placeholder="Check-out Date" required />
+      <button type="submit" class="btn primary">Submit Booking</button>
+    </form>
+  </div>
+</div>
+</section>
+
+<section class="testimonials" id="testimonials">
+  <div class="testimonials-container">
+
+    <h2 class="section-title">Guest Experiences</h2>
+    <p class="section-subtitle">
+      What our guests say about their stay
+    </p>
+
+    <div class="testimonial-grid">
+
+      <div class="testimonial-card">
+        <p class="quote">
+          “The rooms were spotless, the staff was welcoming,
+          and the atmosphere was calm and elegant.”
+        </p>
+        <span class="author">— Chinedu A., Lagos</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="quote">
+          “Perfect location, reliable service, and very comfortable beds.
+          I’ll definitely stay again.”
+        </p>
+        <span class="author">— Aisha M., Abuja</span>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="quote">
+          “From check-in to check-out, everything felt smooth
+          and professionally handled.”
+        </p>
+        <span class="author">— Daniel K.</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+
+    <div class="contact-text">
+      <h2>Contact Us</h2>
+      <p>
+        Whether you’re planning a short stay or a longer visit,
+        our team is ready to assist you.
+      </p>
+
+
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <textarea placeholder="Your Message" rows="4"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h3>Belvedere Travelodge</h3>
+      <p>Comfort, convenience, and quiet luxury.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Guest Experiences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>📍 Umuoya, Anambra</p>
+      <p>📞 +234 806 526 4484</p>
+      <p>✉️ info@belvederetravelodge.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Belvedere Travelodge. All rights reserved.</p>
+  </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
